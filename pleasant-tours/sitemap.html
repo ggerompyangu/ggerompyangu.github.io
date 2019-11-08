@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href=".\css\main.css">
+	<link rel="stylesheet" href=".\css\font.css">
+	<link rel="stylesheet" href=".\css\home.css">
+	<link rel="stylesheet" href=".\css\fonts\font-awesome.css">
+	<script type="text/javascript" src=".\js\jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src=".\js\unslider.min.js"></script>
+	<script type="text/javascript" src=".\js\masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src=".\js\imagesloaded.js"></script>
+	<style>
+		section.about {
+			background-image: url('img/001.jpg');
+			/*padding-top: 30px;			margin-top: 250px;*/
+			position: absolute;
+			height: 350px;
+			width: 100%;
+		}
+		section.about article {
+			margin-top: 30px;
+			background-color: rgba(255,255,255,0.95);
+			padding: 20px;
+			-webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 1);
+			box-shadow: 0px 0px 10px 3px rgba(0,0,0,1);
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+		li {
+			margin-left: 26px;
+		}
+		li ul li {
+			list-style-type: square;
+			margin-left: 26px;
+		}
+		a {
+			color: #300;
+			-webkit-transition: color 0.2s;
+			-o-transition: color 0.2s;
+			transition: color 0.2s;
+			text-decoration: underline;
+		}
+		a:hover {
+			color: #d00;
+		}
+	</style>
+</head>
+<body>
+	<section class="about clear">
+	<!-- background, top padding -->
+		<article class="row bigger">
+			<h2>Site Map</h2><br>
+			<ul>
+				<li><a href="home.html">Home Page</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="tours.html">Tours</a></a>
+						<ul>
+							<li><a href="safari.html">Safari Tours</a></li>
+							<li><a href="beach.html">Beach Tours</a></li>
+							<li><a href="mountain.html">Mountain Climbing</a></li>
+							<li><a href="sport.html">Extreme Sports</a></li>
+							<li><a href="other.html">Other Tours</a></li>
+						</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Site Map</a></li>
+			</ul>
+		</article>
+	</section>
+	<section class="button-links">
+		<a href="contact.html">
+			Contact Us
+		</a>
+		<a href="feedback.html">
+
+		</a>
+	</section>
+	<footer class="clear">
+		<section class="row">
+		Site design by Ggero Mpyangu
+		</section>
+	</footer>
+</body>
+</html>

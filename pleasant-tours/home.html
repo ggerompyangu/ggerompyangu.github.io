@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href=".\css\main.css">
+	<link rel="stylesheet" href=".\css\font.css">
+	<link rel="stylesheet" href=".\css\home.css">
+	<link rel="stylesheet" href=".\css\fonts\font-awesome.css">
+	<script type="text/javascript" src=".\js\jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src=".\js\unslider.min.js"></script>
+	<script type="text/javascript" src=".\js\masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src=".\js\imagesloaded.js"></script>
+</head>
+<body>
+	<section class="slider-section">
+		<div class="slider">
+			<ul>
+				<li style="background-image: url(./img/002.jpg); background-size: 100%;">
+					<div class="innerbox clear">
+						<div class="slider-img">Uganda</div>
+						<div class="slider-content">Take a break overseas</div>
+					</div>
+				</li>
+				<li style="background-image: url(./img/slider2.jpg); background-size: 100%; background-position-y:50%;">
+					<div class="innerbox clear">
+						<div class="slider-img">Experience Africa - Kenya Safaris</div>
+						<div class="slider-content">Visit Masaai Mara</div>
+					</div>
+				</li>
+				<li style="background-image: url(./img/004.jpg); background-size: 100%;">
+					<div class="innerbox clear">
+						<div class="slider-img">Boat Cruises on Lake Victoria</div>
+						<div class="slider-content">Prices starting from $400</div>
+					</div>
+				</li>
+				<li style="background-image: url(./img/005.jpg); background-size: 100%;">
+					<div class="innerbox clear">
+						<div class="slider-img"><span style="color: #222;">Sun, Sand, Sea - Visit Uganda's beaches</span></div>
+						<div class="slider-content">Soak out the stress</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="stuff row">
+	<h3>Our customers say:</h3>
+		<blockquote class="six columns">
+			<p>The experience was amazing. I'm definitely coming here with my family</p>
+			<cite>Quinto Kasiita</cite>
+		</blockquote>
+		<blockquote class="six columns">
+			<p>I loved it so much!! The customer service was excellent</p>
+			<cite>Ggero Mpyangu</cite>
+		</blockquote>
+	</section>
+
+<section id="container" class="items clear grid-3">
+		<div class="item columns one">
+			<img src="./img/001.jpg" alt="">
+			<p>
+				A beautiful scenery, with stunning features at every turn. Graceful ambience, impeccable service from tour guides with a genuine smile, and excellent amenities suitable for all ages.
+			</p>
+		</div>
+		<div class="item columns one">
+			<img src="./img/009.jpg" alt="">
+			<p> Our accomodations offer visitors unforgettable experiences within the heart of the Queen Elizabeth National Park surrounded by the magical Mt.Rwenzori aptly described as the 'Mountains of the Moon'.
+			</p>
+		</div>
+		<div class="item columns one">
+			<img src="./img/003.jpg" alt="">
+			<p>
+				Safari, in Kiswahili, simply means "journey".To go on safari' In Tanzania is, and always will remain a fascinating and exclusive experience!.So journey the serengeti and marvel at the majest Simba(Lion) &amp; others
+			</p>
+		</div>
+		<div class="item columns two">
+			<img src="./img/005.jpg" alt="">
+			<p>Soak the stress away in the greate lakes, Kyoga, Turkana and Victoria. <br> Sun bathe &amp; have long walks with your bare feet pad along pebbles and smooth sand anlong the long stretch of beaches
+			</p>
+		</div>
+		<div class="item columns one">
+			<img src="./img/004.jpg" alt="">
+			<p>Cruise the Kazinga Channel, view the great concentration of hippos, spot the many of water birds, marvel at the majestic elephants in their natural habitat and the notorious Nile crocodiles sunbathing on the banks.
+			</p>
+		</div>
+		<div class="item columns one">
+			<img src="./img/008.jpg" alt="">
+			<p> Witness, learn, discover &amp; indulge in the numerous East African cultural practices and values,Join the exilarating Imbalu practice, visit the cultural heritage sites; Kasubi tombs and Nyero Rock Paintings
+				.</p>
+		</div>
+	</section>	<footer class="clear">
+		<section class="row">
+		Site design by Ggero Mpyangu
+		</section>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.slider').unslider({
+    		speed: 500,               //  The speed to animate each slide (in milliseconds)
+				delay: 4000,              //  The delay between slide animations (in milliseconds)
+				keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+				dots: true,               //  Display dot navigation
+				fluid: false              //  Support responsive design. May break non-responsive designs
+    	});
+    	var $container = $('#container');
+				// initialize Masonry after all images have loaded
+				$container.imagesLoaded( function() {
+				  $container.masonry({
+				  	itemSelector: '.item',
+				  	columnWidth: '.item',
+				  	gutter: 10
+				  });
+			});
+		});
+	</script>
+</body>
+</html>

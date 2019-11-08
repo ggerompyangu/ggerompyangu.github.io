@@ -1,0 +1,56 @@
+/*
+ * Pleasant Tours - main.css
+ * Author: Ggero Mpyangu
+ * Version: 1.0.0
+ *
+ ========================================================= */
+@import "config\colors";
+@import "config\dimensions";
+
+@import "partials\font";
+@import "partials\reset";
+
+a {
+	color: $link-color;
+}
+
+
+
+footer {
+	padding: 30px;
+	background-color: lighten($background-color,25%) ;
+}
+
+footer {
+	padding: 30px;
+	background-color: lighten($background-color,25%) ;
+}
+
+/* -------------------------------------------- */
+/*	Grid: 																			*/
+/* -------------------------------------------- */
+
+@import "partials\grid";
+
+.grid-12 {
+	width: $page-inner-width;
+	margin: auto;
+}
+
+
+/* -------------------------------------------- */
+/*	Clearfix 																	*/
+/* -------------------------------------------- */
+
+
+.clear {
+  zoom: 1; }
+
+.clear:before, .clear:after {
+    content: '';
+    display: block; }
+
+.clear:after {
+    clear: both;
+  }
+

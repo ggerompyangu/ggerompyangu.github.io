@@ -1,0 +1,49 @@
+/* -------------------------------------------------------- */
+/* Slider     																							*/
+/* -------------------------------------------------------- */
+
+.slider {
+	position: relative;
+	overflow: auto;
+
+}
+
+.slider li {
+	list-style: none;
+}
+
+.slider li{
+  position: relative;
+}
+
+.slider ul li {
+	float: left;
+	height: 300px;
+}
+
+.slider-img {}
+
+.slider-content {}
+
+    .slider .dots {
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+    }
+
+    .slider .dots li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      text-indent: -999em;
+      border: 2px solid #FFF;
+      border-radius: 6px;
+      cursor: pointer;
+      opacity: .4;
+    }
+
+    .slider .dots li.active {
+      background: #FFF;
+      opacity: 1;
+    }

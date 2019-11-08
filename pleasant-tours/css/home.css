@@ -1,0 +1,170 @@
+/*
+ * Pleasant Tours - home.css
+ * Author: Ggero Mpyangu
+ * Version: 1.0.0
+ *
+ ========================================================= */
+
+/* -------------------------------------------------------- */
+/* Slider     																							*/
+/* -------------------------------------------------------- */
+.slider {
+  position: relative;
+  overflow: auto;
+}
+
+.slider li {
+  list-style: none;
+}
+
+.slider li {
+  position: relative;
+}
+
+.slider ul li {
+  float: left;
+  height: 300px;
+}
+
+.slider .dots {
+  position: absolute;
+  /*right: 20px;*/
+  right: calc( ( ( 100% - 960px ) / 2 ) + 20px );
+  bottom: 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slider .dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #FFF;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .4;
+}
+
+.slider .dots li.active {
+  background: #FFF;
+  opacity: 1;
+}
+
+.slider-section {
+  padding: 0 0 20px 0;
+}
+
+div.slider {
+  width: 100%;
+  /*max-width: 960px;*/
+  margin: auto;
+}
+
+div.slider .innerbox {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+section.items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0;
+}
+
+div.item:first-child {
+  margin-left: 0;
+}
+
+div.item {
+  font-size: 16px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  /*extra padding for icons (i know it's missing)*/
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
+}
+div.item img {
+  width: 100%;
+  /*height: 196px;/* new */
+  padding: 0px 0px 0 0;
+}
+div.item p {
+  padding: 10px;
+  height: 155px
+}
+
+div.item .item-icons {
+  position: relative;
+  font-size: 0;
+}
+div.item .item-icons a.plus, div.item .item-icons a.download {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
+div.item .item-icons a.plus {
+  background-color: #300;
+  left: 0;
+}
+div.item .item-icons a.download {
+  background-color: #300;
+  right: 0;
+  float: right;
+}
+
+i {
+  position: absolute;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+i:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+div.item.columns.two > p {
+  /*height: 110px;*/
+}
+
+/* ---------------------------------- */
+/*  Slider styles                     */
+/* ---------------------------------- */
+
+.slider ul li .slider-content {
+  position: absolute;
+  /*height: 100%;*/
+  width: 30%;
+  background-color: rgba(180, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: #ebebeb;
+}
+
+.slider ul li .slider-img {
+  position: absolute;
+  bottom: 45px;
+  right: 20px;
+  font-size: 1.75em;
+  color: #ebebeb;
+}

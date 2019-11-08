@@ -1,0 +1,8 @@
+$page-inner-width: 960px;
+
+/* Grid */
+$row-width: $page-inner-width + 0px;
+$total-col-width: 100%;
+$cols: 12;
+$col-width: $total-col-width/$cols;
+$gutter: 10px;

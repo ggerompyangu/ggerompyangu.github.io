@@ -1,0 +1,120 @@
+/*
+ * Pleasant Tours - home.css
+ * Author: Ggero Mpyangu
+ * Version: 1.0.0
+ *
+ ========================================================= */
+
+@import "config\colors";
+@import "config\dimensions";
+
+@import "partials\slider";
+
+.slider-section {
+	padding: 20px 0;
+}
+
+div.slider {
+	width: $page-inner-width;
+	margin: auto;
+}
+
+section.items {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	//margin-bottom: 20px;
+	//background-color: #ddd;
+	font-size: 0;
+}
+div.item:first-child {
+	margin-left:0;
+}
+
+div.item {
+	//display: inline-block;
+	//margin-left: 5px;
+	font-size: 16px;
+	background-color: #ddd;
+	margin-bottom: 10px;
+	//padding: 0;
+	//margin-left: 10px;
+	/*extra padding for icons*/
+	//padding-bottom: 20px !important;
+	img {
+		width: 100%;
+		padding:0px 0px 0 0;
+	}
+	p {
+		padding:10px;
+	}
+}
+
+div.item .item-icons {
+	position: relative;
+	font-size: 0;
+	a.plus, a.download {
+		display: inline-block;
+		position:relative;
+		height: 40px;
+		width:40px;
+		//bottom:0;
+		color: #fff;
+	}
+	a.plus {
+		background-color: #300;
+		left:0;
+
+	}
+	a.download {
+		background-color: #300;
+		right:0;
+		float: right;
+	}
+}
+
+i {
+	position: relative;
+	font-size: 22px;
+	width: 22px;
+	height: 22px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+
+i:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+
+/* ---------------------------------- */
+/*  Slider styles                     */
+/* ---------------------------------- */
+
+
+.slider ul li .slider-content {
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	background-color: rgba(180,0,0,0.6);
+	top:0;
+	left:0;
+	padding: 20px;
+	color: #ebebeb;
+}
+
+.slider ul li .slider-img {
+	position: absolute;
+	bottom: 45px;
+	right: 20px;
+	font-size:1.75em;
+	color: #ebebeb;
+}
+
+

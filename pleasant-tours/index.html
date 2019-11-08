@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pleasant Tours</title>
+	<link rel="shortcut icon" href="./img/favic.png">
+	<script type="text/javascript" src=".\js\jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+	didResize = false;
+	changeValue = 600;
+
+	function init() {
+		window.addEventListener( 'resize', function( event ) {
+
+					didResize = true;
+					resizeHeader();
+
+			}, false );
+		}
+
+		function resizeHeader ( ) {
+			var iw = window.innerWidth;
+			if (iw < changeValue) {
+				$('frameset').attr('rows', '100,*');
+			} else{
+				$('frameset').attr('rows', '50,*');
+			};
+		};
+
+		init();
+});
+</script>
+</head>
+<frameset rows="50,*" border="0" >
+	<frame src="header.html" id="top" noresize="" scrolling="no"></frame>
+	<frame src="home.html" id="main" name="main"></frame>
+</frameset>
+</html>

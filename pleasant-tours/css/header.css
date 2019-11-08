@@ -1,0 +1,42 @@
+/*
+ * Pleasant Tours - header.css
+ * Author: Ggero Mpyangu
+ * Version: 1.0.0
+ *
+ ========================================================= */
+body {
+  background-color: black;
+  color: white;
+  padding-right: 20px;
+}
+
+nav {
+  width: 100%;
+  max-width: 960px;
+  margin: 10px auto;
+}
+
+a {
+  color: inherit;
+  padding-right: 20px;
+  vertical-align: sub;/* not such a good hack */
+  padding-top: 2px;
+}
+
+a.last {
+  padding-right: 0;
+}
+
+.brand {
+  float: left;
+  font-size: 1.2em;
+}
+
+img {
+  float: left;
+  width: 32px;
+}
+
+div.float-right {
+  float: right;
+}

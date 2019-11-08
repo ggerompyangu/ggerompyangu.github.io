@@ -1,0 +1,37 @@
+		.tour-info {
+
+		}
+		.tour-info > h1,
+		div.sizing {
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.tour-info > h1 {
+			color: #fff;
+			margin-bottom: -11px;
+			text-transform: uppercase;
+			font-family: Raleway;
+			font-size: 48px;
+			font-weight: bold;
+		}
+		.tour-info > article {
+			background-color: #fff;
+			padding-top: 15px;
+		}
+			.tour-info > article p {
+				padding-bottom: 20px;
+			}
+		section.location {
+			position: relative;
+		}
+		a {
+			color: #300;
+			-webkit-transition: color 0.2s;
+			-o-transition: color 0.2s;
+			transition: color 0.2s;
+			text-decoration: underline;
+		}
+		a:hover {
+			color: #d00;
+		}
