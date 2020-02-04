@@ -1,0 +1,63 @@
+/* TYPOGRAPHY */
+p {
+	font-size: 17px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Montserrat;
+	font-weight: 700;
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+.navbar-brand {
+	font-size: 28px
+}
+
+/* MODIFICATIONS */
+.container {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+/* SPACERS */
+.spacer-l {
+	height: 150px;
+}
+.spacer-m {
+	height: 100px;
+}
+.spacer-s {
+	height: 50px;
+}
+
+/* COLOR */
+.bg-dark {
+	background-color: #212327!important;
+}
+/*
+
+#fb59a2 - pink
+#87c830 - green
+#ffd403 - yellow
+#fe7e10 - orange
+#8e3ccc - purple
+
+*/
+
+.bg-pink { background-color: #fb59a2; }
+.bg-green { background-color: #87c830; }
+.bg-yellow { background-color: #ffd403; }
+.bg-orange { background-color: #fe7e10; }
+.bg-purple { background-color: #8e3ccc; }
+
+.btn-pink { background-color: #fb59a2;  border-color: #fb59a2; }
+.btn-green { background-color: #87c830;  border-color: #87c830; }
+.btn-yellow { background-color: #ffd403;  border-color: #ffd403; }
+.btn-orange { background-color: #fe7e10;  border-color: #fe7e10; }
+.btn-purple { background-color: #8e3ccc;  border-color: #8e3ccc; }
